@@ -68,3 +68,22 @@ http://localhost:8000 to access FastAPI application
 http://localhost:9090 to access Prometheus UI. Basic Authentication was implemented for prometheus UI so, it give prompt to enter username and password. 
 Prometheus scrapes metrics from the application and make them available at http://localhost:8000/metrics 
 http://localhost:9093 to access Alertmanager UI. Basic Authentication was implemented for Alertmanager UI so, it give prompt to enter username and password. 
+
+# Project Images 
+Resolved mail from Alertmanger when application is up from the down status
+<img width="368" alt="image" src="https://github.com/SaikiranBSK10/Fastapi-Prometheus-Basic-Auth/assets/66936785/e637b190-bbd1-449d-b816-bb1cfe89a145">
+Mail from Alertmanager when application is down
+<img width="364" alt="image" src="https://github.com/SaikiranBSK10/Fastapi-Prometheus-Basic-Auth/assets/66936785/dc7cc141-774d-4176-a663-ec847b8a3e60">
+Basic authentication for Prometheus UI 
+<img width="959" alt="image" src="https://github.com/SaikiranBSK10/Fastapi-Prometheus-Basic-Auth/assets/66936785/7b6772f1-8ad9-425e-8758-0418ae631fa8">
+Basic authentication for Alertmanager UI
+<img width="956" alt="image" src="https://github.com/SaikiranBSK10/Fastapi-Prometheus-Basic-Auth/assets/66936785/ae9edcc9-e774-4288-8691-92f2ca7e5b96">
+Below are the images from Prometheus and Alertmanager
+<img width="959" alt="image" src="https://github.com/SaikiranBSK10/Fastapi-Prometheus-Basic-Auth/assets/66936785/5e9f05f2-ae37-4764-87ac-65aa62fb0bcd">
+<img width="959" alt="image" src="https://github.com/SaikiranBSK10/Fastapi-Prometheus-Basic-Auth/assets/66936785/bf68b036-312b-4e73-a3dc-a727416f1c76">
+<img width="959" alt="image" src="https://github.com/SaikiranBSK10/Fastapi-Prometheus-Basic-Auth/assets/66936785/65f15ff9-cd21-4600-9b96-cc2e6be36368">
+<img width="959" alt="image" src="https://github.com/SaikiranBSK10/Fastapi-Prometheus-Basic-Auth/assets/66936785/623a4d9e-073b-438d-95a0-d8b670db5895">
+
+
+
+
