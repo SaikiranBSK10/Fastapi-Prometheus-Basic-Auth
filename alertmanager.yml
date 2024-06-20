@@ -1,0 +1,32 @@
+global:
+  resolve_timeout: 5m
+  http_config:
+    follow_redirects: true
+    enable_http2: true
+  smtp_hello: localhost
+  smtp_require_tls: false
+
+route:
+  receiver: email-notifications
+  group_by: ['alertname']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 1h
+
+receivers:
+- name: email-notifications
+  email_configs:
+  - send_resolved: true
+    to: 'to_mailid@gmail.com, to_mailid@outlook.com, to_mailid@organizationname.com' # list of mail ids to which you want to deliver the mail
+    from: 'from@gmail.com'  # mail id from which mail needs to be sent 
+    hello: localhost
+    smarthost: 'smtp.gmail.com:465' 
+    auth_username: 'from@gmail.com' # mail id from which mail needs to be sent
+    auth_password: 'auth_password_from_gmail_account'
+    auth_identity: 'from@gmail.com' # mail id from which mail needs to be sent
+    headers:
+      From: 'from@gmail.com' # mail id from which mail needs to be sent
+      Subject: 'FastAPI instance is down'
+    require_tls: false 
+
+templates: []
